@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    #path('', include('app.urls')),                # ROOT URL 권한을 app.urls로 이양
-    path('app/', include('app.urls')),             
+    path('', include('myapp.urls')),               # ROOT URL 권한을 app.urls로 이양  
+    path('app/', include('app.urls')),   
     path("admin/", admin.site.urls),
 ]
