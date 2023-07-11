@@ -8,4 +8,5 @@ urlpatterns= [
     path('hello/', views.greeting, name='hello'),                           # 127.0.0.1:8000/hello/
     path('members/', views.members, name='members'),                        # 127.0.0.1:8000/members/
     path('members/details/<int:id>', views.details, name='details'),        # 127.0.0.1:8000/details/5
+    path('testing/', views.testing, name='testing'), 
 ]
