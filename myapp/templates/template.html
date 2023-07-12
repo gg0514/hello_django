@@ -3,11 +3,23 @@
 <html>
 <body>
 
+  
+{% comment %} 
+
 {% for x in fruits %}
   <h1>{{ x }}</h1>
 {% endfor %}
 
-<p>In views.py you can see what the fruits variable looks like.</p>
+<p>In views.py you can see what the fruits variable looks like.</p> 
+
+{% endcomment %}
+
+
+<ul>
+  {% for x in mymembers %}
+    <li>{{ x.firstname }}</li>
+  {% endfor %}
+</ul>
 
 </body>
 </html>
